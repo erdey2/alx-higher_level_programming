@@ -3,7 +3,7 @@ import random
 number = random.randint(-10000, 10000)
 if number < 0:
     lastdigit = (number * -1) % 10
-    message = "and is less than 6 and not zero"
+    message = "and is less than 6 and not 0"
     print(f"Last digit of {number} is -{lastdigit} {message}")
 else:
     lastdigit = number % 10
@@ -12,5 +12,5 @@ else:
     elif (lastdigit == 0):
         message = "and is 0"
     else:
-        message = "and is less than 6 and not zero"
+        message = "and is less than 6 and not 0"
     print(f"Last digit of {number} is {lastdigit} {message}")
