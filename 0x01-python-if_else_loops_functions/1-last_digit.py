@@ -11,4 +11,7 @@ elif (lastdigit == 0):
     message = "and is 0"
 else:
     message = "and is less than 6 and not zero"
-print(f"Last digit of {number} is {lastdigit} {message}")
+if number > 0:
+    print(f"Last digit of {number} is {lastdigit} {message}")
+else:
+    print(f"Last digit of {number} is -{lastdigit} {message}")
