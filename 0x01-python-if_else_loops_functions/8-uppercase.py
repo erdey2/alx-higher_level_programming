@@ -2,5 +2,4 @@
 def uppercase(str):
     value = ord(str)
     if value >= 97 and value <= 122:
-        value = chr(value) - 32
-    print("{}".format(value))
+        return ''.join(chr(ord(value) - 32))
