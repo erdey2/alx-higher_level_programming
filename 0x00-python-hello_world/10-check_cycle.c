@@ -2,18 +2,19 @@
 
 /**
  * check_cycle - checks if the linked list have a cycle
- * @list: address of the node
+ * @list: address of the first node
  *
  * Return: 1 if there is cycle otherwise 0
  */
 int check_cycle(listint_t *list)
 {
+	listint_t *current, *temp;
+
 	if (list == NULL || list->next == NULL)
 		return (0);
-	listint_t *current, *temp;
 	current = list;
 	temp = current->next;
-	while ((current != NULL) && (current->next != NULL) && (temp->next != NULL) )
+	while ((current != NULL) && (current->next != NULL) && (temp->next != NULL))
 	{
 		if (current == temp)
 			return (1);
