@@ -10,8 +10,8 @@ int check_cycle(listint_t *list)
 {
 	while (list)
 	{
-		list = list -> next;
-		if (list -> next == NULL)
+		list = list->next;
+		if (list->next == NULL)
 			return (0);
 	}
 	return (1);
