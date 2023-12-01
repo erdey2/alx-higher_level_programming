@@ -2,11 +2,11 @@
 
 if (__name__ == '__main__'):
     from calculator_1 import add, sub, mul, div
-    from sys import argv
+    from sys import argv, exit
     argc = len(argv)
     if (argc != 4):
         print('Usage:{} {} {} {}'.format(argv[0], '<a>', 'operator', '<b>'))
-        sys.exit(1)
+        exit(1)
     op = argv[2]
     if (op == '+' or op == '-' or op == '*' or op == '/'):
         if (op == '+'):
@@ -21,6 +21,6 @@ if (__name__ == '__main__'):
         elif (op == '/'):
             div = div(int(argv[1]), int(argv[3]))
             print('{:s} / {:s} = {:d}'.format(argv[1], argv[3], div))
-        else:
-            print('Unknown operator. Available operators: +, -, * and /')
-            sys.exit(1)
+    else:
+        print('Unknown operator. Available operators: +, -, * and /')
+        exit(1)
