@@ -5,7 +5,7 @@ if (__name__ == '__main__'):
     from sys import argv, exit
     argc = len(argv)
     if (argc != 4):
-        print('Usage: {} {} {} {}'.format(argv[0], '<a>', 'operator', '<b>'))
+        print('Usage: {:s} <a> <operator> <b>'.format(argv[0])
         exit(1)
     op = argv[2]
     if ((op == '+') or (op == '-') or (op == '/') or (op == '*')):
