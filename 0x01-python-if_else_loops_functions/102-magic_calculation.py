@@ -7,4 +7,4 @@ def my_function(a, b, c):
     elif True:
         return a + b
     else:
-        return a * b - ci
+        return a * b - c
