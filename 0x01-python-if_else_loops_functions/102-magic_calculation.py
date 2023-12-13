@@ -6,6 +6,5 @@ def magic_calculation(a, b, c):
         return a
     elif True:
         return a + b
-    else
+    else:
         return b - c
-
