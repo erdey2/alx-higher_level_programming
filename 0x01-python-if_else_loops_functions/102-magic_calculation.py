@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-def magic_calculation(a, b, c):
+def my_function(a, b, c):
     if a < b:
         return c
-    if c < b:
+    elif b > c:
+        return a
+    elif True:
         return a + b
-    return a * b - c
+    else:
+        return a * b - ci
