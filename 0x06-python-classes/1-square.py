@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ a square class """
 
+
 class Square:
     """ this is a constructor (init) method
         Parameter:
