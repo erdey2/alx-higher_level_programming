@@ -31,6 +31,7 @@ class Square:
     """ calculate and display the area """
     def area(self):
         return self.__size * self.__size
+
     def my_print(self):
         row = self.__size
         if row == 0:
