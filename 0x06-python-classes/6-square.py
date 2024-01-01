@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """create a square class"""
+
+
 class Square:
     """ A class representing a square.
 
