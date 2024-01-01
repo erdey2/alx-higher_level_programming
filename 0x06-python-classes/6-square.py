@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""create a square class"""
 class Square:
     """ A class representing a square.
 
@@ -12,7 +12,7 @@ class Square:
         Args:
         size (int): the size of the square.
         position (int): the x and y coordinate of the square.
-            """
+        """
         self._size = size
         self._position = position
 
