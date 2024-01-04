@@ -16,7 +16,7 @@ class Rectangle:
         """
         self.__height = height
         self.__width = width
-    
+
     @property
     def width(self):
         """Get the current value of width."""
@@ -56,4 +56,3 @@ class Rectangle:
         else:
             perimeter = 2 * (self.__width + self.__height)
         return perimeter
-
