@@ -16,7 +16,7 @@ class Rectangle:
         """
         self._width = width
         self._height = height
-    
+
     @property
     def width(self):
         """Get the current value of width."""
