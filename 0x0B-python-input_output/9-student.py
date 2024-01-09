@@ -2,12 +2,8 @@
 """Class to json module."""
 
 
-class Student(object):
+class Student():
     """Student class."""
-    first_name
-    last_name
-    age
-
     def __init__(self, first_name, last_name, age):
         """initialize instance variables."""
         self.first_name = first_name
