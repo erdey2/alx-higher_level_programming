@@ -15,4 +15,3 @@ class Student(object):
 
     def to_json(self):
         return self.__dict__.copy()
-
