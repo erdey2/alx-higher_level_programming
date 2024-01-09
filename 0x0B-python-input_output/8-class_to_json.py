@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """Convert classes to json."""
-import json
 
 
 def class_to_json(obj):
     """Encode to json."""
-    return json.dumps(obj.__dict__)
+    dic = {}
+    if hasattr(obj, "__dict__"):
+        dic = obj.__dict__.copy()
+
+    return dic
