@@ -64,3 +64,6 @@ NameError: name 'inf' is not defined
 Traceback (most recent call last):
   ...
 NameError: name 'nan' is not defined
+
+>>> divide([[1, 2, 3], [1, 2, 3.9]], 2)
+[[0.5, 1.0, 1.5], [0.5, 1.0, 1.95]]
