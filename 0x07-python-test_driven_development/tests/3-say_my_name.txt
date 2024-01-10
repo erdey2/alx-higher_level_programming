@@ -1,0 +1,59 @@
+>>> display = __import__('3-say_my_name').say_my_name
+>>> display('Erdey', 'Syoum')
+My name is Erdey Syoum
+>>> display('Erdey')
+My name is Erdey 
+>>> display(10)
+Traceback (most recent call last):
+  ...
+TypeError: first_name must be a string
+>>> display('123')
+My name is 123 
+>>> display('123', None)
+Traceback (most recent call last):
+  ...
+TypeError: last_name must be a string
+>>> display('123', 0)
+Traceback (most recent call last):
+  ...
+TypeError: last_name must be a string
+>>> display(0, 0)
+Traceback (most recent call last):
+  ...
+TypeError: first_name must be a string
+>>> display({}, {})
+Traceback (most recent call last):
+  ...
+TypeError: first_name must be a string
+>>> display({}, "Syoum")
+Traceback (most recent call last):
+  ...
+TypeError: first_name must be a string
+>>> display(50, 123)
+Traceback (most recent call last):
+  ...
+TypeError: first_name must be a string
+>>> display((), ())
+Traceback (most recent call last):
+  ...
+TypeError: first_name must be a string
+>>> display(None, None)
+Traceback (most recent call last):
+  ...
+TypeError: first_name must be a string
+>>> display("Erdey", None)
+Traceback (most recent call last):
+  ...
+TypeError: last_name must be a string
+>>> display("Erdey", "Errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr6")
+My name is Erdey Errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr6
+>>> display("Erdey", Nan)
+Traceback (most recent call last):
+  ...
+NameError: name 'Nan' is not defined
+>>> display("Erdey", inf)
+Traceback (most recent call last):
+  ...
+NameError: name 'inf' is not defined
+>>> display("Erdey", 'inf')
+My name is Erdey inf
