@@ -4,7 +4,7 @@
 
 def text_indentation(text):
     """
-    Prints the text with delimiters on the same line, adding indentation after them.
+    Prints the text with delimiters.
 
     Args:
         text: The text to be printed.
