@@ -57,3 +57,8 @@ Traceback (most recent call last):
 NameError: name 'inf' is not defined
 >>> display("Erdey", 'inf')
 My name is Erdey inf
+
+>>> display()
+Traceback (most recent call last):
+  ...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
