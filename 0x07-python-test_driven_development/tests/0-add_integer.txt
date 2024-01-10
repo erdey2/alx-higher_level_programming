@@ -1,20 +1,69 @@
-import function from module:
-	>>> add_integer = __import__('0-add_integer').add_integer
+>>> add = __import__('0-add_integer').add_integer
 
->>> add_integer(1, 67)
-    68
->>> add_integer(1, -87)
-    -86
->>> add_integer(1, a)
-    Traceback (most recent call last):
-    ...
-    NameError: name 'a' is not defined
->>> add_integer(1, 'a')
-    Traceback (most recent call last):
-    TypeError: b must be an integer
->>> add_integer(1, None)
-    Traceback (most recent call last):
-    TypeError: b must be an integer
->>> add_integer(None, 2)
-    Traceback (most recent call last):
-    TypeError: a must be an integer
+>>> add(1, 67)
+68
+>>> add(1, -87)
+-86
+>>> add(1, a)
+Traceback (most recent call last):
+	...
+NameError: name 'a' is not defined
+>>> add(1, 'a')
+Traceback (most recent call last):
+	...
+TypeError: b must be an integer
+>>> add(1, None)
+Traceback (most recent call last):
+	...
+TypeError: b must be an integer
+>>> add(None, 2)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+
+>>> add(1, '9')
+Traceback (most recent call last):
+	...
+TypeError: b must be an integer
+>>> add([], 67)
+Traceback (most recent call last):
+  ...
+TypeError: a must be an integer
+>>> add(-98, {})
+Traceback (most recent call last):
+  ...
+TypeError: b must be an integer
+>>> add(9887777655444444444411111123455666666666677788889998776655443333.877777766655555, -987654322111199999999999999999999977777776565555555)
+9887777655443456066993088578407421659979584728655656296532274845
+>>> add(0, False)
+0
+>>> add(-9, True)
+-8
+>>> add(True, False)
+1
+>>> add('a', 'b')
+Traceback (most recent call last):
+  ...
+TypeError: a must be an integer
+>>> add('9', '-8')
+Traceback (most recent call last):
+  ...
+TypeError: a must be an integer
+>>> add((8, 19), (-9, 4))
+Traceback (most recent call last):
+  ...
+TypeError: a must be an integer
+>>> add((8, 19))
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+>>> add(0, None)
+Traceback (most recent call last):
+  ...
+TypeError: b must be an integer
+>>> add('')
+Traceback (most recent call last):
+  ...
+TypeError: a must be an integer
+>>> add(9,)
+107
