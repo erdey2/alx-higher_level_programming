@@ -40,7 +40,7 @@ ValueError: my_int must be greater than 0
 Traceback (most recent call last):
   ...
 TypeError: age must be an integer
->>> bg.integer_validator("age", {3, 4}) 
+>>> bg.integer_validator("age", {3,4}) 
 Traceback (most recent call last):
   ...
 TypeError: age must be an integer
