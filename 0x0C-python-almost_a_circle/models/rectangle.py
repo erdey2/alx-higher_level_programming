@@ -67,4 +67,15 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
+        """calculate area of the rectangle."""
         return self.__width * self.__height
+
+    def display(self):
+        for i in range(self.__height):
+            for j in range(self.__width):
+                print('#', end='')
+            print()
+
+    def __str__(self):
+        """override the print object method."""
+        return f'[{Rectangle.__name__}] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}'
