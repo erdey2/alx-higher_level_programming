@@ -82,7 +82,7 @@ class Rectangle(Base):
 
 
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         count = 0
         for arg in args:
             count += 1
@@ -96,3 +96,28 @@ class Rectangle(Base):
             self.__x = arg
         elif count == 5:
             self.__y = arg
+        
+        if kwargs and len(kwargs) != 0:
+            for i, j in kwargs.items():
+                
+                if i == 'id':
+                    if j is not None:
+                        self.id = j
+                
+                if i == 'width':
+                    if j is not None:
+                        self.__width = j
+
+                if i == 'height':
+                    if j is not None:
+                        self.__height = j
+
+                if i == 'x':
+                    if j is not None:
+                        self.__x = j
+                
+                if i == 'y':
+                    if j is not None:
+                        self.__y = j
+                
+
