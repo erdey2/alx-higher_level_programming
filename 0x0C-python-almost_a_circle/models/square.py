@@ -24,10 +24,7 @@ class Square(Rectangle):
 
     def display(self):
         """display square with #."""
-        for i in range(self.size):
-            for j in range(self.size):
-                print('#', end='')
-            print()
+        return super().display()
 
     def __str__(self):
         """override the str method."""
