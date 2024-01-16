@@ -28,9 +28,10 @@ class Base(object):
         items = []
         if not list_objs:
             pass
-        for i in range(len(list_objs)):
-            items.append(list_objs[i].to_dictionary())
+        else:
+            for i in range(len(list_objs)):
+                items.append(list_objs[i].to_dictionary())
         lists = cls.to_json_string(items)
 
-        with open(file_name, "w", encoding="utf-8") as file:
+        with open(file_name, "w") as file:
             file.write(lists)
