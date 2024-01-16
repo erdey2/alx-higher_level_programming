@@ -145,7 +145,11 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """convert rectangle instance to dictionary."""
-        dictionary = {}
-        for i in ['id', 'width', 'height', 'x', 'y']:
-            dictionary[i] = getattr(self, i)
+        dictionary = {
+                'id': self.id,
+                'width': self.width,
+                'height': self.height,
+                'x': self.x,
+                'y': self.y
+                }
         return dictionary

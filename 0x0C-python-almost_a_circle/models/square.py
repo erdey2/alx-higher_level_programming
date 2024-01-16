@@ -64,13 +64,13 @@ class Square(Rectangle):
 
                 elif i == 'y':
                     self.y = j
-    
+
     def to_dictionary(self):
         """convert object to dictionary."""
         dictionary = {
                 'id': self.id,
                 'size': self.size,
-                'x' : self.x,
-                'y' : self.y
+                'x': self.x,
+                'y': self.y
                 }
         return dictionary
