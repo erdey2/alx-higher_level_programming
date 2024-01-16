@@ -21,3 +21,16 @@ class Base(object):
         else:
             result = json.dumps(list_dictionaries)
         return str(result)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        file_name = 'Rectangle.json'
+        items = []
+        if not list_objs:
+            pass
+        for i in range(len(list_objs)):
+            items.append(list_objs[i].to_dictionary())
+        lists = cls.to_json_string(items)
+
+        with open(file_name, "w", encoding="utf-8") as file:
+            file.write(lists)
