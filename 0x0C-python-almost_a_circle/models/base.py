@@ -20,4 +20,4 @@ class Base(object):
             result = []
         else:
             result = json.dumps(list_dictionaries)
-        return result
+        return str(result)
