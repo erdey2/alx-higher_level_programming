@@ -97,7 +97,7 @@ class Rectangle(Base):
     def __str__(self):
         """override the print object method."""
         return (
-                f'[{Rectangle.__name__}] ({self.id})'
+                f'[{Rectangle.__name__}] ({self.id}) '
                 f'{self.x}/{self.y} - {self.width}/{self.height}'
                 )
 
