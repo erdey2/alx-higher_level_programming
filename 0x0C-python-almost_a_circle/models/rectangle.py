@@ -96,9 +96,11 @@ class Rectangle(Base):
 
     def __str__(self):
         """override the print object method."""
-        return f'[{Rectangle.__name__}] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}'
-
-
+        result = f"""
+        [{Rectangle.__name__}]({self.id})
+        {self.x}/{self.y} - {self.width}/{self.height}
+        """
+        return result
 
     def update(self, *args, **kwargs):
         """update using args."""
@@ -115,14 +117,13 @@ class Rectangle(Base):
             self.__x = arg
         elif count == 5:
             self.__y = arg
-        
+
         if kwargs and len(kwargs) != 0:
             for i, j in kwargs.items():
-                
+
                 if i == 'id':
                     if j is not None:
                         self.id = j
-                
                 if i == 'width':
                     if j is not None:
                         self.__width = j
@@ -130,11 +131,9 @@ class Rectangle(Base):
                 if i == 'height':
                     if j is not None:
                         self.__height = j
-
                 if i == 'x':
                     if j is not None:
                         self.__x = j
-                
                 if i == 'y':
                     if j is not None:
                         self.__y = j
@@ -144,6 +143,4 @@ class Rectangle(Base):
         dictionary = {}
         for i in ['id', 'width', 'height', 'x', 'y']:
             dictionary[i] = getattr(self, i)
-            #return json.dumps(self.__dict__)
         return dictionary
-
