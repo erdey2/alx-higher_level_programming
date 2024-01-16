@@ -23,6 +23,7 @@ class Square(Rectangle):
         return self.size * self.size
 
     def display(self):
+        """display square with #."""
         for i in range(self.size):
             for j in range(self.size):
                 print('#', end='')
