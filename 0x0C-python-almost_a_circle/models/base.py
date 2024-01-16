@@ -24,7 +24,7 @@ class Base(object):
 
     @classmethod
     def save_to_file(cls, list_objs):
-        file_name = 'Rectangle.json'
+        file_name = '{}.json'.format(cls.__name__)
         items = []
         if not list_objs:
             pass
