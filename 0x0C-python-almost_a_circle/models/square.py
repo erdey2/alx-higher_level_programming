@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Square class module."""
 from models.rectangle import Rectangle
+import json
 
 
 class Square(Rectangle):
@@ -20,7 +21,7 @@ class Square(Rectangle):
 
     def area(self):
         """calculate area of the square."""
-        return self.size * self.size
+        return super().area()
 
     def display(self):
         """display square with #."""
@@ -63,3 +64,13 @@ class Square(Rectangle):
 
                 elif i == 'y':
                     self.y = j
+    
+    def to_dictionary(self):
+        """convert object to dictionary."""
+        dictionary = {
+                'id': self.id,
+                'size': self.size,
+                'x' : self.x,
+                'y' : self.y
+                }
+        return dictionary
