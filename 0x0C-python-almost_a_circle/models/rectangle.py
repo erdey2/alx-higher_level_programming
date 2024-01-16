@@ -96,11 +96,10 @@ class Rectangle(Base):
 
     def __str__(self):
         """override the print object method."""
-        result = f"""
-        [{Rectangle.__name__}]({self.id})
-        {self.x}/{self.y} - {self.width}/{self.height}
-        """
-        return result
+        return (
+                f'[{Rectangle.__name__}] ({self.id})'
+                f'{self.x}/{self.y} - {self.width}/{self.height}'
+                )
 
     def update(self, *args, **kwargs):
         """update using args."""
