@@ -1,2 +1,2 @@
 -- list rows without a name value
-SELECT score, name != NULL FROM second_table ORDER BY score DESC;
+SELECT score, name FROM second_table WHERE name != '' OR name IS NOT NULL ORDER BY score DESC;
