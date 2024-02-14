@@ -1,5 +1,5 @@
 -- left join
-select title, tv_show_genres.genre_id as genre_id
-from tv_show_genres left join tv_shows 
-on show_id = tv_shows.id 
-order by title, tv_show_genres.genre_id ASC;
+SELECT title, tv_show_genres.genre_id AS genre_id
+FROM tv_show_genres LEFT JOIN tv_shows 
+ON show_id = tv_shows.id 
+ORDER BY title, tv_show_genres.genre_id ASC;
