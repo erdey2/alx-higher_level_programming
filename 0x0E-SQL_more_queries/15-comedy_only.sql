@@ -1,5 +1,5 @@
 --show comedy
-SELECT title
+SELECT title AS name
 FROM tv_shows A
 LEFT JOIN tv_show_genres B
 ON A.id = B.show_id
