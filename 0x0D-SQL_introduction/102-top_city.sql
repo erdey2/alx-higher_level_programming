@@ -1,5 +1,6 @@
 -- average temprature
 SELECT city, avg(value) AS avg_temp 
 FROM temperatures 
+WHERE month BETWEEN 7 AND 8
 GROUP BY city
-WHERE ORDER BY avg_temp DESC LIMIT 3;
+ORDER BY avg_temp DESC LIMIT 3;
