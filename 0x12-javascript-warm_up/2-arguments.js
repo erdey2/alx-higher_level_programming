@@ -5,7 +5,7 @@ if (args.length < 3)
 {
 	console.log('No argument');
 }
-else if (args.length == 3)
+else if (args.length === 3)
 {
 	console.log('Argument found');
 }
