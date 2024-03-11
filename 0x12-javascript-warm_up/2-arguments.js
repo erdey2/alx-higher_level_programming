@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const process = require('node:process');
+const process = require ('node:process');
 let args = process.argv;
 if (args.length < 3)
 {
