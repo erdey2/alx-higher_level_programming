@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""class table mapper """
+"""class table mapper
+"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
