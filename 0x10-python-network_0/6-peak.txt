@@ -1,1 +1,2 @@
+# the time complexity of the program
 O(n)
