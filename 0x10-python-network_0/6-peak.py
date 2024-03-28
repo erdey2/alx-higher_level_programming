@@ -1,7 +1,7 @@
 # a program to find a pick number
-# A number is peak if it is not smaller than its neighbor 
+# A number is peak if it is not smaller than its neighbor
 def find_peak(list_of_integers):
-    peak = None;
+    peak = None
     if not list_of_integers:
         return peak
     for i in range(len(list_of_integers)):
@@ -15,4 +15,4 @@ def find_peak(list_of_integers):
             if list_of_integers[i] >= list_of_integers[i - 1]:
                 if list_of_integers[i] >= list_of_integers[i + 1]:
                     peak = list_of_integers[i]
-    return peak;
+    return peak
