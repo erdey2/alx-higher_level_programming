@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ a module to find a pick number.
 A number is peak if it is not smaller than its neighbor """
+
+
 def find_peak(list_of_integers):
     """ a function to find a peak number """
     peak = None
