@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # a program to find a pick number
 # A number is peak if it is not smaller than its neighbor
 def find_peak(list_of_integers):
